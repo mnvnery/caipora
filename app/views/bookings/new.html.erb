@@ -1,0 +1,17 @@
+<div class="text-center">
+<%= simple_form_for [@trip, @booking] do |f| %>
+
+<div class="booking-card">
+    <div >
+    <%= f.input :start_date %>
+    </div>
+    <div>
+    <%= f.input :end_date %>
+    </div>
+    <p> <strong>Total price: <%= @total_price %> €</strong></p>
+    <%= f.submit "Book", class: "btn btn-primary"%>
+</div>
+
+<% end%>
+</div>
+

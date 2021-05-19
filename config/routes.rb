@@ -3,8 +3,11 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
-  resources :bookings, only: [:index, :show, :new, :create]
-  resources :trips, only: [:index, :show]
+  
+  resources :trips, only: [:index, :show] do
+    resources :bookings, only: [:new, :create]
+  end
+  resources :bookings, only: [:index, :show]
   resources :pages, only: [:index, :show, :new, :create]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
