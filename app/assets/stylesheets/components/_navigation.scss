@@ -1,0 +1,125 @@
+.sidenav {
+    height: 100%;/* 100% Full-height */
+    width: 5vw; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    top: 0;/* Stay at the top */
+    left: 0;
+    background-color: $ocre; /* Black*/
+    z-index: 2;
+    border-right: solid 1px black;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.menu-links {
+    margin-top: 16vh;
+    margin-left: -15vw;
+    transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.socials {
+    position: absolute;
+    bottom: 5vh;
+    left: -15vw;
+    transition: 0.3s;
+}
+
+.socials-open {
+    left: 2vw;
+}
+
+.menu-links-open {
+    margin-left: 0;
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 0.5vw 0.5vw 1vw 2.2vw;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    font-family: "Pangram-Medium";
+    letter-spacing: 0.35vw;
+    font-size: 1.2vw;
+    line-height: 0;
+}
+
+.sidebar-forward-link {
+    margin-left: 1.5vw;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: black;
+}
+
+.sidenav-open {
+    width: 20vw;
+}
+
+.hamburger { 
+    margin-top: 10vh !important;
+    float: right;
+    margin-right: 0.7vw !important;
+}
+
+
+.pink {
+    background-color: $dark-pink;
+}
+
+.green {
+    background-color: $dark-green;
+}
+
+.blue {
+    background-color: $dark-blue;
+}
+
+.active {
+    text-decoration: underline !important;
+}
+// Specific CSS for your home-page
+.header-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+}
+@media only screen and (max-width: 600px) {
+    .sidenav {
+        width: 11vw;
+    }
+
+    .sidenav-open {
+        width: 60vw;
+    }
+    .hamburger {
+        margin-top: 6.5vh !important;
+        padding: 10px 7px !important;
+    }
+
+    .hamburger-inner {
+        width: 20px;
+    }
+
+    .sidenav a {
+        font-size: 5vw;
+        line-height: 6vw;
+        padding-left: 5.5vw;
+    }
+    .socials-open {
+        left: 5.5vw;
+    }
+    .menu-links {
+        margin-top: 12vh;
+        margin-left: -45vw;
+    }
+    .menu-links-open {
+        margin-left: 0;
+    }
+    .sidebar-forward-link {
+        margin-left: 3.5vw;
+    }
+
+}
