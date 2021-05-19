@@ -1,3 +1,20 @@
+
+body {
+    letter-spacing: 0.03em;
+    margin: 0;
+    overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    text-decoration: none;
+    color: black !important;
+}
+a:hover {
+    text-decoration: none;
+    color: black !important;
+}
+
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";
@@ -11,3 +28,4 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
